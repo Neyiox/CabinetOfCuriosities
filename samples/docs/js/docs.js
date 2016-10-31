@@ -10,7 +10,7 @@ function loadPage(page) {
 		container.find('.loader').remove();
 	});
 
-	img.attr('src', 'pages/' +  (page-2) + '.png');
+	img.attr('src', 'https://raw.githubusercontent.com/Neyiox/CabinetOfCuriosities/master/samples/docs/pages/' +  (page-2) + '.png');
 
 }
 
@@ -79,7 +79,7 @@ function setPreview(view) {
 
 	var previewWidth = 115,
 		previewHeight = 73,
-		previewSrc = 'pics/preview.jpg',
+		previewSrc = 'https://raw.githubusercontent.com/Neyiox/CabinetOfCuriosities/master/samples/docs/pics/preview.jpg',
 		preview = $(_thumbPreview.children(':first')),
 		numPages = (view==1 || view==$('#slider').slider('option', 'max')) ? 1 : 2,
 		width = (numPages==1) ? previewWidth/2 : previewWidth;
